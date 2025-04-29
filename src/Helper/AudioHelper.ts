@@ -26,10 +26,14 @@ export default class AudioHelper {
     const randomDraw = MathHelper.getRandomInteger(1, publicVoiceChance);
     const staffCutoff = publicVoiceChance / staffVoiceChance;
     if (randomDraw <= staffCutoff) {
-      const staffVoice = guild.channels.cache.get(staffVoiceChannelId) as VoiceBasedChannel
-      if (staffVoice.members.filter((member) => !member.user.bot).size === 0) return
+      const staffVoice = guild.channels.cache.get(
+        staffVoiceChannelId,
+      ) as VoiceBasedChannel;
+      if (staffVoice.members.filter((member) => !member.user.bot).size === 0) {
+        return;
+      }
       this.playRandomSoundToChannel(
-          staffVoice,
+        staffVoice,
       );
       return;
     }
@@ -37,7 +41,9 @@ export default class AudioHelper {
     const voiceChannels = guild.channels.cache
       .filter((channel): channel is VoiceChannel => channel.isVoiceBased())
       .filter((channel) => channel.id !== staffVoiceChannelId)
-      .filter((channel) => channel.members.filter((member) => !member.user.bot).size > 0);
+      .filter((channel) =>
+        channel.members.filter((member) => !member.user.bot).size > 0
+      );
     if (voiceChannels.size === 0) return;
     const voiceChannel = ArrayHelper.getRandomElement([
       ...voiceChannels.values(),
