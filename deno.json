@@ -1,0 +1,13 @@
+{
+  "tasks": {
+    "dev": "deno run --allow-net --allow-read --allow-env --allow-sys --allow-run main.ts",
+    "deploy": "deno run --allow-net --allow-read --allow-env deploy-commands.ts"
+  },
+  "imports": {
+    "@discordjs/voice": "npm:@discordjs/voice@^0.18.0",
+    "@std/assert": "jsr:@std/assert@1",
+    "@std/path": "jsr:@std/path@^1.0.9",
+    "discord.js": "npm:discord.js@^14.19.2",
+    "libsodium-wrappers": "npm:libsodium-wrappers@^0.7.15"
+  }
+}
