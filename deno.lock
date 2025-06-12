@@ -6,19 +6,18 @@
     "jsr:@std/crypto@^1.0.4": "1.0.4",
     "jsr:@std/dotenv@*": "0.225.3",
     "jsr:@std/internal@^1.0.6": "1.0.6",
-    "jsr:@std/path@*": "1.0.9",
-    "jsr:@std/path@^1.0.9": "1.0.9",
+    "jsr:@std/path@*": "1.1.0",
+    "jsr:@std/path@^1.1.0": "1.1.0",
     "jsr:@std/uuid@*": "1.0.5",
     "npm:@avanio/expire-cache@*": "0.6.7_@avanio+logger-like@0.2.11_@luolapeikko+cache-types@0.0.8",
-    "npm:@discordjs/builders@*": "1.11.1",
+    "npm:@discordjs/builders@*": "1.10.0",
     "npm:@discordjs/builders@1.10.0": "1.10.0",
-    "npm:@discordjs/rest@*": "2.5.0",
     "npm:@discordjs/voice@*": "0.18.0",
     "npm:@discordjs/voice@0.18": "0.18.0",
     "npm:dayjs@*": "1.11.13",
     "npm:discord-api-types@*": "0.38.1",
-    "npm:discord.js@*": "14.19.2",
-    "npm:discord.js@^14.19.2": "14.19.2",
+    "npm:discord.js@*": "14.19.3",
+    "npm:discord.js@^14.19.3": "14.19.3",
     "npm:libsodium-wrappers@~0.7.15": "0.7.15"
   },
   "jsr": {
@@ -40,8 +39,8 @@
     "@std/internal@1.0.6": {
       "integrity": "9533b128f230f73bd209408bb07a4b12f8d4255ab2a4d22a1fd6d87304aca9a4"
     },
-    "@std/path@1.0.9": {
-      "integrity": "260a49f11edd3db93dd38350bf9cd1b4d1366afa98e81b86167b4e3dd750129e"
+    "@std/path@1.1.0": {
+      "integrity": "ddc94f8e3c275627281cbc23341df6b8bcc874d70374f75fec2533521e3d6886"
     },
     "@std/uuid@1.0.5": {
       "integrity": "d0b8da73ec1934c32346e3a090d526f77dded587664859afabae0cc2c782428b",
@@ -74,8 +73,8 @@
         "tslib"
       ]
     },
-    "@discordjs/builders@1.11.1": {
-      "integrity": "sha512-2zDAVuoeAkdv0YQzYKO8vZfaDfB+1KZ60ymBKtD7QDpsh6lzAnQSUBLqeRkhlons6BT9+yRctOh9fPy94w6kDA==",
+    "@discordjs/builders@1.11.2": {
+      "integrity": "sha512-F1WTABdd8/R9D1icJzajC4IuLyyS8f3rTOz66JsSI3pKvpCAtsMBweu8cyNYsIyvcrKAVn9EPK+Psoymq+XC0A==",
       "dependencies": [
         "@discordjs/formatters",
         "@discordjs/util",
@@ -179,10 +178,10 @@
     "discord-api-types@0.38.1": {
       "integrity": "sha512-vsjsqjAuxsPhiwbPjTBeGQaDPlizFmSkU0mTzFGMgRxqCDIRBR7iTY74HacpzrDV0QtERHRKQEk1tq7drZUtHg=="
     },
-    "discord.js@14.19.2": {
-      "integrity": "sha512-L/ivhVefzzRcChHJSaGYsgA4Uqx6or2sst5JZ/ft9OBwrj8OJIzrrcutlkHnm/hlI0Hrm3es62TRVksU8VUqrg==",
+    "discord.js@14.19.3": {
+      "integrity": "sha512-lncTRk0k+8Q5D3nThnODBR8fR8x2fM798o8Vsr40Krx0DjPwpZCuxxTcFMrXMQVOqM1QB9wqWgaXPg3TbmlHqA==",
       "dependencies": [
-        "@discordjs/builders@1.11.1",
+        "@discordjs/builders@1.11.2",
         "@discordjs/collection@1.5.3",
         "@discordjs/formatters",
         "@discordjs/rest",
@@ -301,9 +300,9 @@
   "workspace": {
     "dependencies": [
       "jsr:@std/assert@1",
-      "jsr:@std/path@^1.0.9",
+      "jsr:@std/path@^1.1.0",
       "npm:@discordjs/voice@0.18",
-      "npm:discord.js@^14.19.2",
+      "npm:discord.js@^14.19.3",
       "npm:libsodium-wrappers@~0.7.15"
     ]
   }
