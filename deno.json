@@ -9,5 +9,10 @@
     "@std/path": "jsr:@std/path@^1.1.0",
     "discord.js": "npm:discord.js@^14.19.3",
     "libsodium-wrappers": "npm:libsodium-wrappers@^0.7.15"
+  },
+  "lint": {
+    "rules": {
+      "exclude": ["no-import-prefix", "no-unversioned-import"]
+    }
   }
 }
