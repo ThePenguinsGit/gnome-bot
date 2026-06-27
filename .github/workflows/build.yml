@@ -22,7 +22,7 @@ jobs:
       - name: Install Deno
         uses: denoland/setup-deno@v2
         with:
-          deno-version: v2.x
+          deno-version: v2.4.2
       - run: deno install --allow-scripts
       - run: deno fmt --check
       - run: deno lint
